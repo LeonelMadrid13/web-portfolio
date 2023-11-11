@@ -1,6 +1,5 @@
 import { EmailTemplate } from '@/components/email-template';
 import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const fromEmail = process.env.FROM_EMAIL || '';
@@ -8,7 +7,7 @@ const fromEmail = process.env.FROM_EMAIL || '';
 export async function POST(req: Request, res: Response) {
   const { email, subject, message } = await req.json();
   try {
-    const res = await fetch('https://api.resend.com/emails', {
+    const response = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -22,8 +21,8 @@ export async function POST(req: Request, res: Response) {
       }),
     });
 
-    if (res.ok) {
-      const data = await res.json();
+    if (response.ok) {
+      const data = await response.json();
       return NextResponse.json(data);
     }
     return NextResponse.json({ error: 'Something went wrong' });
