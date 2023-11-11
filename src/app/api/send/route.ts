@@ -17,7 +17,7 @@ export async function POST(req: Request, res: Response) {
       body: JSON.stringify({
         from: fromEmail,
         to: [fromEmail, email],
-        subject: 'hello world',
+        subject: subject,
         react: EmailTemplate({subject, message}) as React.ReactElement,
       }),
     });
