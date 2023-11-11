@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@nextui-org/react': ^2.2.9
   '@tabler/icons-react': ^2.40.0
+  '@types/file-saver': ^2.0.7
   '@types/node': ^20
   '@types/react': ^18
   '@types/react-dom': ^18
@@ -36,6 +37,7 @@ dependencies:
   tailwind-variants: 0.1.18_tailwindcss@3.3.5
 
 devDependencies:
+  '@types/file-saver': 2.0.7
   '@types/node': 20.9.0
   '@types/react': 18.2.37
   '@types/react-dom': 18.2.15
@@ -2588,6 +2590,10 @@ packages:
   /@tabler/icons/2.40.0:
     resolution: {integrity: sha512-VqKsBSX159cLFTnCzkCmGhZtSPJHNN0lM2sC4xe0HPOfPUnjiex7rDHDdut4oe4iKRecDDpwXwM9BcU6xCPlCg==}
     dev: false
+
+  /@types/file-saver/2.0.7:
+    resolution: {integrity: sha512-dNKVfHd/jk0SkR/exKGj2ggkB45MAkzvWCaqLUUgkyjITkGNzH8H+yUwr+BLJUBjZOe9w8X3wgmXhZDRg1ED6A==}
+    dev: true
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
