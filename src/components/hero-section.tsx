@@ -2,9 +2,9 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import { saveAs } from "file-saver";
+import { saveAs } from "file-saver"
 import { Button } from '@nextui-org/react'
-import { TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from 'react-type-animation'
 
 function HeroSection() {
   const saveFile = () => {
