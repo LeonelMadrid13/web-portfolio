@@ -2,10 +2,19 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
+import { saveAs } from "file-saver";
 import { Button } from '@nextui-org/react'
 import { TypeAnimation } from 'react-type-animation';
 
 function HeroSection() {
+  const saveFile = () => {
+    saveAs(
+      "public/resume/Resume.pdf",
+      "Resume-LeonelMadrid.pdf"
+    );
+  };
+
+
   return (
     <section>
       <div className='grid grid-cols-1 sm:grid-cols-12'>
@@ -33,12 +42,13 @@ function HeroSection() {
           </p>
           <div>
             <Button 
+              href='#contact'
               radius='full' 
               className="px-6 py-3 w-full sm:w-fit mr-4 bg-gradient-to-tr from-[#D00000] to-[#FAA307] hover:bg-gradient-to-tr hover:from-[#DC2F02] hover:to-[#FFBA08] text-white shadow-lg"
             >
               Hire Me
             </Button>
-            <Button radius='full' className="px-1 py-1 w-full sm:w-fit bg-gradient-to-br from-[#D00000] via-[#F48C06] to-[#FAA307] bg-transparent hover:bg-slate-800 text-white shadow-lg mt-4">
+            <Button onClick={saveFile} radius='full' className="px-1 py-1 w-full sm:w-fit bg-gradient-to-br from-[#D00000] via-[#F48C06] to-[#FAA307] bg-transparent hover:bg-slate-800 text-white shadow-lg mt-4">
               <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download CV</span>
             </Button>
           </div>
