@@ -9,6 +9,7 @@ specifiers:
   autoprefixer: ^10.0.1
   eslint: ^8
   eslint-config-next: 14.0.2
+  file-saver: 2.0.5
   framer-motion: ^10.16.4
   next: 14.0.2
   postcss: ^8
@@ -24,6 +25,7 @@ specifiers:
 dependencies:
   '@nextui-org/react': 2.2.9_3l6gfcys4le3at6u7hhvvstxwa
   '@tabler/icons-react': 2.40.0_react@18.2.0
+  file-saver: 2.0.5
   framer-motion: 10.16.4_biqbaboplfbrettd7655fr4n2y
   next: 14.0.2_biqbaboplfbrettd7655fr4n2y
   prop-types: 15.8.1
@@ -3612,6 +3614,10 @@ packages:
     dependencies:
       flat-cache: 3.1.1
     dev: true
+
+  /file-saver/2.0.5:
+    resolution: {integrity: sha512-P9bmyZ3h/PRG+Nzga+rbdI4OEpNDzAVyy74uVO9ATgzLK6VtAsYybF/+TOCvrc0MO793d6+42lLyZTw7/ArVzA==}
+    dev: false
 
   /fill-range/7.0.1:
     resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
