@@ -37,9 +37,6 @@ function HeroSection() {
               repeat={Infinity}
             />
           </h1>
-          <p className='text-[#ADB7BE] text.lg lg:text-xl mb-6'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
           <div>
             <Button 
               href='/#contact'
