@@ -15,8 +15,8 @@ export async function POST(req: Request, res: Response) {
         'Authorization': `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: 'Acme <onboarding@resend.dev>',
-        to: ['delivered@resend.dev'],
+        from: fromEmail,
+        to: [fromEmail, email],
         subject: 'hello world',
         react: EmailTemplate({subject, message}) as React.ReactElement,
       }),
@@ -26,7 +26,7 @@ export async function POST(req: Request, res: Response) {
       const data = await res.json();
       return NextResponse.json(data);
     }
-
+    return NextResponse.json({ error: 'Something went wrong' });
   } catch (error) {
     return NextResponse.json({ error });
   }
