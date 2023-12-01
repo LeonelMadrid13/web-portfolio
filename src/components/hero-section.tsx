@@ -39,7 +39,7 @@ function HeroSection() {
           </h1>
           <div>
             <Button 
-              href='/#contact'
+              href='#contact'
               radius='full' 
               className="px-6 py-3 w-full sm:w-fit mr-4 bg-gradient-to-tr from-[#D00000] to-[#FAA307] hover:bg-gradient-to-tr hover:from-[#DC2F02] hover:to-[#FFBA08] text-white shadow-lg"
             >
