@@ -5,15 +5,17 @@ import Image from 'next/image'
 import { saveAs } from 'file-saver'
 import { Button } from '@nextui-org/react'
 import { TypeAnimation } from 'react-type-animation'
+import { useRouter } from 'next/navigation'
 
 function HeroSection() {
   const saveFile = () => {
     saveAs(
-      "https://drive.google.com/file/d/1Eno3-IgAIkkqLY25rcq8LmYIeuLCUjD5/view?usp=drive_link",
+      "public\files\Resume.pdf",
       "Resume-LeonelMadrid.pdf"
-    );
-  };
-
+      );
+    };
+    const router = useRouter();
+    
 
   return (
     <section>
@@ -39,7 +41,8 @@ function HeroSection() {
           </h1>
           <div>
             <Button 
-              href='#contact'
+              type='button'
+              onClick={() => router.push("/#contact")}
               radius='full' 
               className="px-6 py-3 w-full sm:w-fit mr-4 bg-gradient-to-tr from-[#D00000] to-[#FAA307] hover:bg-gradient-to-tr hover:from-[#DC2F02] hover:to-[#FFBA08] text-white shadow-lg"
             >

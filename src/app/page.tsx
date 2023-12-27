@@ -4,6 +4,8 @@ import NavbarComponent from "@/components/navbar";
 import ProjectsSection from "@/components/projects-section";
 import Footer from "@/components/footer";
 import EmailSection from "@/components/email-section";
+import ScrollTopComponent from "@/components/scrollTop";
+
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
         <ProjectsSection />
         <EmailSection />
       </div>
+      <ScrollTopComponent />
       <Footer />
     </main>
   )
