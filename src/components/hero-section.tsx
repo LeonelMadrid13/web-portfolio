@@ -10,7 +10,7 @@ import { useRouter } from 'next/navigation'
 function HeroSection() {
   const saveFile = () => {
     saveAs(
-      "public\files\Resume.pdf",
+      "files\Resume.pdf",
       "Resume-LeonelMadrid.pdf"
       );
     };
