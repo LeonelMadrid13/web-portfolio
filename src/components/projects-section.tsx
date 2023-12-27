@@ -26,7 +26,7 @@ const projectsData = [
   {
     id: 3,
     title: "E-commerce Application",
-    description: "Created this e-commerce application + dashboard using Nextjs, React, TailwindCSS",
+    description: "WIP of an e-commerce dashboard + admin dashboard using Nextjs, React, TailwindCSS",
     image: "/images/projects/ecommerce.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/LeonelMadrid13/e-commerce-admin",
